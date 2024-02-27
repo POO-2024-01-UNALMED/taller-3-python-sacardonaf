@@ -1,4 +1,3 @@
-from televisores.control import Control
 class TV:
     _numTV=0
     def __init__(self, marca, estado:bool) -> None:
@@ -39,7 +38,7 @@ class TV:
             self._volumen=volumen
     def getControl(self):
         return self._control
-    def setControl(self,control:Control)->None:
+    def setControl(self,control)->None:
         self._control=control
     def turnOn(self)->None:
         self._estado=True
