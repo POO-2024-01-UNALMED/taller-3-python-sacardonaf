@@ -1,3 +1,4 @@
+from televisores.control import Control
 class TV:
     _numTV=0
     def __init__(self, marca, estado:bool) -> None:
@@ -29,7 +30,7 @@ class TV:
             self._canal=canal
     def getPrecio(self)->int:
         return self._precio
-    def setPrecio(self, precio)->None:
+    def setPrecio(self, precio:int)->None:
         self._precio=precio
     def getVolumen(self)->int:
         return self._volumen
@@ -38,7 +39,7 @@ class TV:
             self._volumen=volumen
     def getControl(self):
         return self._control
-    def setControl(self,control)->None:
+    def setControl(self,control:Control)->None:
         self._control=control
     def turnOn(self)->None:
         self._estado=True
