@@ -25,7 +25,7 @@ class TV:
     def getCanal(self)->int:
         return self._canal
     def setCanal(self,canal:int):
-        if self._estado and self._canal>=1 and self._canal<=120:
+        if (self._estado and canal>=1 and canal<=120):
             self._canal=canal
     def getPrecio(self)->int:
         return self._precio
@@ -34,7 +34,7 @@ class TV:
     def getVolumen(self)->int:
         return self._volumen
     def setVolumen(self,volumen:int):
-        if self._estado and self._volumen>=0 and self._volumen<=7:
+        if self._estado and volumen>=0 and volumen<=7:
             self._volumen=volumen
     def getControl(self):
         return self._control
